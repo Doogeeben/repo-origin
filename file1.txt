@@ -1,2 +1,4 @@
-TO je datoteka 1
-vnešeni so popravki 1
+To je datoteka 1. 
+Vnešeni so popravki 1. 
+Riba grize raci rep. 
+Konec!
