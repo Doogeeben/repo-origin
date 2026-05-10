@@ -1,0 +1,66 @@
+    1  git clone https://github.com/Doogeeben/repo-origin.git
+    2  cd repo-origin
+    3  echo "#Moj GIT projekt za vajo" > README.md 
+    4  echo "TO je datoteka 1" > file1.txt
+    5  echo "TO je datoteka 2" > file2.txt
+    6  echo "TO je datoteka 3" > file3.txt
+    7  echo "TO je datoteka 4" > file4.txt
+    8  echo "TO je datoteka 5" > file5.txt
+    9  git status
+   10  git add .
+   11  git status
+   12  git commit - m "1.korak: add README and 5 txt files"
+   13  git commit -m "1.korak: add README and 5 txt files"
+   14  git config --global user.name
+   15  git config --global user.email
+   16  git config --global user.name "Klavdij Čotar"
+   17  git config --global user.email "doogeeben@gmail.com"
+   18  git commit --amend --reset-author
+   19  git config --global user.name
+   20  git config --global user.email
+   21  git checkout -b development
+   22  git branch
+   23  echo "vnešeni so popravki 1" >> file1.txt
+   24  git add file1.txt
+   25  git commit -m "vpisani so popravki 1 v datoteko file1.txt"
+   26  git checkout development
+   27  git checkout -b second-faeture
+   28  echo "Riba grize raci rep" >> file1.txt
+   29  git add file1.txt
+   30  git commit -m "Vnesena sprememba v tekstu v second-feature na file1.txt"
+   31  git checkout  development
+   32  git checkout -b third-feature
+   33  echo "Sedaj sledi tretja sprememba datoteke" >> file2.txt
+   34  git add file2.txt
+   35  git commit -m "Vnešena je naslednja sprememba v datoteko file2.txt"
+   36  git checkout development
+   37  git merge first-feature
+   38  git checkout development
+   39  git checkout -b first-feature
+   40  echo "Prva sprememba first-feature" >> file1.txt
+   41  git add file1.txt
+   42  git commit -m "Vnesi spremembo v first-feature v datoteko file1.txt"
+   43  git checkout development
+   44  git merge first-feature
+   45  git branch -m second-faeture second-feature
+   46  git status
+   47  git branch
+   48  git merge first-feature
+   49  git checkout secon-feature
+   50  git checkout second-feature
+   51  git rebase development
+   52  nano file1.txt
+   53  git add file1.txt
+   54  git rebase --continue
+   55  git checkout development
+   56  git merge second-feature
+   57  git checkout third-feature
+   58  git merge development
+   59  git checkout development
+   60  git merge third-feature
+   61  git branch -d first-feature
+   62  git branch -d second-feature
+   63  git branch -d third-feature
+   64  git log --online --graph --all
+   65  git log --oneline --graph --all
+   66  history > commands.txt
