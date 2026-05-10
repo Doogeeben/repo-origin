@@ -1,2 +1,3 @@
 TO je datoteka 1
 vnešeni so popravki 1
+Prva sprememba first-feature
